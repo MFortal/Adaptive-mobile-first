@@ -2,15 +2,93 @@
   .container {
     padding: 0 30px;
   }
-
   .header__inner {
     min-height: 100px;
+  }
+
+  .head {
+    background-position: center center;
+    min-height: 385px;
+  }
+
+  .top-slider {
+    &__title {
+      font-size: 60px;
+      padding: 50px 0 15px;
+      margin: 0 auto 30px;
+      max-width: 520px;
+    }
+
+    &__btn {
+      display: block;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 0 auto;
+      font-size: 18px;
+      background-color: $accent;
+      color: $bg-color;
+      padding: 15px 45px;
+      border-radius: 3px;
+    }
+
+    .slick__dots {
+      bottom: 50px;
+    }
+
+    .slick-arrow {
+      width: 56px;
+      height: 56px;
+      position: absolute;
+      right: 0;
+      z-index: 5;
+    }
+
+    .slick-next,
+    .slick-prev {
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .slick-next {
+      background-image: url("./images/next-arrow.svg");
+      background-color: $bg-color;
+      bottom: calc(50% - 56px);
+    }
+
+    .slick-prev {
+      background-image: url("./images/prev-arrow.svg");
+      background-color: $accent;
+      top: calc(50% - 56px);
+    }
   }
 }
 
 @media (min-width: 768px) {
   .container {
     padding: 0 40px;
+  }
+  .top-slider {
+    &__item {
+      max-height: 465px;
+    }
+    &__title {
+      padding: 87px 0 0;
+      margin-bottom: 0;
+      &::after {
+        display: none;
+      }
+    }
+    &__text {
+      display: block;
+      max-width: 590px;
+      margin: 0 auto;
+      padding: 25px 0 32px;
+
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 400;
+      font-family: "RobotoCondensed-Regular", serif;
+    }
   }
 }
 
@@ -20,10 +98,41 @@
     margin: 0 auto;
     padding: 0 40px;
   }
+  .head {
+    min-height: 620px;
+  }
+
+  .top-slider {
+    &__title {
+      padding-top: 100px;
+      font-size: 84px;
+      letter-spacing: 2px;
+      max-width: 750px;
+    }
+    .slick__dots {
+      bottom: 80px;
+    }
+  }
 }
 
 @media (min-width: 1440px) {
   .container {
     max-width: 1320px;
+  }
+  .head {
+    min-height: 668px;
+  }
+
+  .top-slider {
+    &__title {
+      padding-top: 110px;
+      font-size: 96px;
+      max-width: 865px;
+    }
+    &__text {
+      font-size: 24px;
+      line-height: 26px;
+      max-width: 885px;
+    }
   }
 }
