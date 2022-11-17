@@ -1,5 +1,3 @@
-$color_h1: tomato;
-
-h1 {
-  color: $color_h1;
-}
+@import "normalize.css";
+@import "./scss/style.scss";
+@import "./scss/media.scss";
