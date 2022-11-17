@@ -14,5 +14,8 @@
   "devDependencies": {
     "pug": "^3.0.2",
     "sass": "^1.56.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
