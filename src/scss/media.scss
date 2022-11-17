@@ -90,6 +90,21 @@
       font-family: "RobotoCondensed-Regular", serif;
     }
   }
+
+  .call {
+    &__inner {
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__box {
+      max-width: 60%;
+    }
+    &__text {
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -113,6 +128,11 @@
       bottom: 80px;
     }
   }
+  .call {
+    &__box {
+      max-width: 695px;
+    }
+  }
 }
 
 @media (min-width: 1440px) {
@@ -133,6 +153,24 @@
       font-size: 24px;
       line-height: 26px;
       max-width: 885px;
+    }
+    .slick-arrow {
+      width: 70px;
+      height: 70px;
+    }
+    .slick-next {
+      bottom: calc(50% - 70px);
+    }
+    .slick-prev {
+      top: calc(50% + 70px);
+    }
+  }
+  .call {
+    &__inner {
+      padding: 0 80px;
+    }
+    &__box {
+      max-width: 795px;
     }
   }
 }

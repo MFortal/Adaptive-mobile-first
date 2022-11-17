@@ -30,6 +30,7 @@ li {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
 .container {
@@ -140,5 +141,35 @@ button {
     height: 10px;
     border-radius: 50%;
     margin: 0 10px;
+  }
+}
+
+// Section Call
+.call {
+  background-color: $accent;
+  padding: 40px 0;
+  color: $white;
+  &__inner {
+    text-align: center;
+  }
+  &__title {
+    @extend %roboto-500;
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    padding: 16px 15px;
+    background-color: $bg-color;
+    color: $accent;
+    font-size: 18px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    @extend %roboto-500;
   }
 }
